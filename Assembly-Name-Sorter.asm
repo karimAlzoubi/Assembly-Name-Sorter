@@ -1,4 +1,4 @@
-; By Mohammad Karim Alzoubi
+; By Mohammad Karim Alzoubi 
 Data segment
     number_names        db 0
     names_length        db 0
