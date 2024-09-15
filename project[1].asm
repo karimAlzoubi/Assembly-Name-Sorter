@@ -1,3 +1,4 @@
+; By Mohammad Karim Alzoubi
 Data segment
     number_names        db 0
     names_length        db 0
@@ -59,7 +60,7 @@ Main proc far
  
         mov ax, 03h              ; fixed the window shape to be 80x25
         int 10h                  ; clean the screa
-        lea dx, newline        ; newline  
+        lea dx, newline          
         mov ah, 9h
         int 21h
         
@@ -79,11 +80,11 @@ Main proc far
         inc al
         mov number_names , al  ; saveing it for later
         
-        lea dx, newline        ; newline  
+        lea dx, newline          
         mov ah, 9h
         int 21h
         
-        lea dx, num2_msg       ; printing
+        lea dx, num2_msg       
         mov ah, 9h
         int 21h
         
@@ -99,7 +100,7 @@ Main proc far
          mov names_length , al ; saveing it for later   
         
         mov ax, 03h              ; fixed the window shape to be 80x25
-        int 10h                  ; clean the screan
+        int 10h                  
                                  
         jmp return
         
@@ -108,7 +109,7 @@ Main proc far
           je error2 
          
           mov ax, 03h              ; fixed the window shape to be 80x25
-         int 10h                  ; clean the screan
+         int 10h                  
          
          
          mov ax,0 
@@ -129,7 +130,7 @@ Main proc far
             mov ah,2
             int 21h
             
-            lea dx, num4_msg       ; printing
+            lea dx, num4_msg       
             mov ah, 9h
             int 21h
             
@@ -149,7 +150,7 @@ Main proc far
             mov cl, number_names    
             sub cx, di
            
-            lea dx, newline        ; newline  
+            lea dx, newline          
             mov ah, 9h
             int 21h
             loop  all_names
@@ -311,7 +312,7 @@ Main proc far
                      cmp di, bx
                      mov bh, al
                      jne same_name          ;jump if not equals
-                     lea dx, newline        ; newline  
+                     lea dx, newline          
                      mov ah, 9h
                      int 21h 
                        
@@ -325,10 +326,10 @@ Main proc far
                      
                      loop printing
                      
-                     lea dx, newline        ; newline  
+                     lea dx, newline          
                      mov ah, 9h
                      int 21h
-                     lea dx, newline        ; newline  
+                     lea dx, newline          
                      mov ah, 9h
                      int 21h
            jmp return 
@@ -341,13 +342,13 @@ Main proc far
            lea dx, error_from_1to6  ; printing
            mov ah, 9h
            int 21h
-           lea dx, newline         ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h
-           lea dx, newline        ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h 
-           lea dx, newline        ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h
         
@@ -360,13 +361,13 @@ Main proc far
            lea dx,  error_len_num ; printing
            mov ah, 9h
            int 21h
-           lea dx, newline        ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h 
-           lea dx, newline        ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h 
-           lea dx, newline        ; newline  
+           lea dx, newline        
            mov ah, 9h
            int 21h
         
@@ -379,14 +380,14 @@ Main proc far
            lea dx,  error_names   ; printing
            mov ah, 9h
            int 21h
-           lea dx, newline        ; newline  
+           lea dx, newline         
            mov ah, 9h
            int 21h 
-           lea dx, newline        ; newline  
+           lea dx, newline         
            mov ah, 9h
            int 21h
                    
-           lea dx, newline        ; newline  
+           lea dx, newline          
            mov ah, 9h
            int 21h
         
@@ -401,3 +402,4 @@ Main proc far
 Main endp
 Code ends
 End Main
+; By Mohammad Karim Alzoubi
