@@ -8,7 +8,7 @@
 <p>📋 Display the sorted names on-screen.</p>
 <p>✅ Includes validation for user input and error handling.</p>
 
-## Technology:
+### Technology:
 <p>Developed with emu8086, simulating the 8086 microprocessor 🛠️.</p>
 
 <p>Project Objective:</p>
