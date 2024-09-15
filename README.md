@@ -13,3 +13,7 @@
 
 <p>Project Objective:</p>
 <p>The main goal of this project is to enhance students' understanding of assembly language programming and sorting algorithms 📚. By working on this program, students will explore low-level programming concepts and gain practical experience with computer architecture 💡.</p>
+
+<p>🚀 Let's connect to collaborate and shape a beautiful future together! </p>
+<p>🌐 My LinkedIn : www.linkedin.com/in/karimx </p>
+<p>📩 My E-mail : mohammad.karimx@gmail.com </p>
